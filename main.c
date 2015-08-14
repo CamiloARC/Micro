@@ -3,28 +3,32 @@
 
 int main(void)
 {
-	int operacion,a,b,x;
+	int operacion,PrimerEntero,SegundoEntero,resultado;
+	
+	printf("Acontinuaci贸n se realizar谩 una operaci贸n basica entre dos enteros\n");
 	printf("Ingrese primer entero: ");
-	scanf("%d",&a);
+	scanf("%d",&PrimerEntero);
 	printf("Ingrese segundo entero: ");
-	scanf("%d",&b);
-	printf("縌ue operacion desea realizar?\n1.Suma\n2.Resta\n3.Multiplicacion\n4.Division");
+	scanf("%d",&SegundoEntero);
+	printf("Eliga el d铆gito de la operaci贸n a realizar\n1.Suma\n2.Resta\n3.Multiplicaci贸n\n4.Division");
 	scanf("%d",&operacion);
+	
 	switch (operacion)
 	{
 		case 1: 	
-		x=suma(a,b);
-		break;
+			resultado=suma(PrimerEntero,SegundoEntero);
+			break;
 		case 2:
-		x=resta(a,b);
-		break;
+			resultado=resta(PrimerEntero,SegundoEntero);
+			break;
 		case 3:
-		x=multiplicacion(a,b);
-		break;
+			resultado=multiplicacion(PrimerEntero,SegundoEntero);
+			break;
 		case 4:
-		x=division(a,b);
-		break;
-	};
-	printf("El resutado es: %d",x);
+			resultado=division(PrimerEntero,SegundoEntero);
+			break;
+	}
+	
+	printf("El resutado es: %d",resultado);
 	return 0;
 }

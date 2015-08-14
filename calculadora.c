@@ -1,15 +1,19 @@
 #include "calculadora.h"
 
-int suma(int a, int b){
-return a+b;
+int suma(int op1, int op2)
+{
+	return op1+op2;
 }
-int resta(int a, int b){
-return a-b;
+int resta(int op1, int op2)
+{
+	return op1-op2;
 }
-int multiplicacion(int a, int b){
-return a*b;
+int multiplicacion(int op1, int op2)
+{
+	return op1*op2;
 }
-int division(int a, int b){
-return a/b;
+int division(int op1, int op2)
+{
+	return op1/op2;
 }
 
